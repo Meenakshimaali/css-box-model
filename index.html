@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-transform: capitalize;
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 500px;
+            width: 70%;
+            margin: auto;
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 80%;
+            width: 80%;
+            background-color: skyblue;
+        }
+        .box1{
+            border: 20px solid navy;
+            margin: 40px 60px 40px 60px;
+            height: 80%;
+            width: 80%;
+            background-color: blue;
+            padding: 70px 20px 40px 100px;
+        }
+        .box2{
+            height: 80%;
+            width: 80%;
+            text-align: center;
+            line-height: 130px;
+            background-color:orange;
+        }
+        .margin{
+            position: absolute;
+            left: 48%;
+            top: 18%;
+        }
+        .border{
+            position: absolute;
+            left: 48%;
+            top: 23%;
+            color: white;
+        }
+        .padding{
+            position: absolute;
+            left: 48%;
+            top: 30%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">Box Modeling</h1>
+    <div class="container">
+        <div class="box">
+            <p class="margin">margin</p>
+            <div class="box1">
+                <p class="border">border</p>
+                <p class="padding">padding</p>
+                <div class="box2">
+                    content                
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
